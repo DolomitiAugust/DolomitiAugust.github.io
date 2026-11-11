@@ -2,3 +2,15 @@
 # Keep the reviewed animation resources byte-identical on Windows and Pages.
 src/app.js text eol=crlf
 src/style.css text eol=crlf
+# Keep binary assets byte-identical too: no text diff, no line-ending conversion.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.zip binary

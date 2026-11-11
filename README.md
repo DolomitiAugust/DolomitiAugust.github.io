@@ -7,7 +7,7 @@ I like to be specific about the things I care about and leave some room for the 
 The live site has my research notes, education and photos from everyday life. If you’re building a homepage of your own, there’s also a template with neutral sample content. [Homepage in English](https://DolomitiAugust.github.io/?lang=en) · [中文主页](https://DolomitiAugust.github.io/?lang=zh) · [Design notes](DESIGN.md)
 
 [![Preview the template](https://img.shields.io/badge/Preview-template-8a5a44?style=for-the-badge)](https://DolomitiAugust.github.io/template-preview/)
-[![Clone the template](https://img.shields.io/badge/Clone-template-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://DolomitiAugust.github.io/template.zip)
+[![Download the template](https://img.shields.io/badge/Clone-template-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://DolomitiAugust.github.io/template.zip)
 
 **Start your own copy:** [preview the template live](https://DolomitiAugust.github.io/template-preview/) — sample content only, with no personal text, photos or links — or [download the template ZIP](https://DolomitiAugust.github.io/template.zip) and run `npm run build && npm run preview`.
 

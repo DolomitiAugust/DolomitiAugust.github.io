@@ -6,8 +6,8 @@
 
 访问主站可以读到研究笔记、求学经历和生活照片。想搭自己的主页，也可以直接取用中性模板。[中文主页](https://DolomitiAugust.github.io/?lang=zh) · [English](https://DolomitiAugust.github.io/?lang=en) · [设计说明](DESIGN.zh-CN.md)
 
-[![Preview template](https://img.shields.io/badge/Preview-template-8a5a44?style=for-the-badge)](https://DolomitiAugust.github.io/template-preview/)
-[![Clone template](https://img.shields.io/badge/Clone-template-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://DolomitiAugust.github.io/template.zip)
+[![预览模板](https://img.shields.io/badge/Preview-template-8a5a44?style=for-the-badge)](https://DolomitiAugust.github.io/template-preview/)
+[![下载模板](https://img.shields.io/badge/Clone-template-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://DolomitiAugust.github.io/template.zip)
 
 **一键使用：** [在线预览模板](https://DolomitiAugust.github.io/template-preview/)（仅示例内容，不含任何个人文字、照片或链接），或 [下载模板 ZIP](https://DolomitiAugust.github.io/template.zip)，然后运行 `npm run build && npm run preview`。
 
@@ -38,7 +38,7 @@ npm run preview
 
 本机装有 Chrome 和 Python Playwright 时，可保持预览服务运行，再执行 `python tests/gate_browser.py --evidence ../gate-review` 验收登录流程。成功用例只在隔离浏览器收到的本地 HTML 中替换测试摘要。
 
-执行 `python tests/mascot_dynamics.py --url http://127.0.0.1:4173 --evidence ../mascot-soak` 可进行三分钟实时时间观察。加上 `--interactions` 可检查输入优先级、闭眼、键盘操作和跳跃中断后的落地。用于观察状态的入口只存在于本地测试拦截的响应中。
+执行 `python tests/mascot_dynamics.py --url http://127.0.0.1:4173 --evidence ../mascot-soak` 可进行三分钟实时动效观察。加上 `--interactions` 可检查输入优先级、闭眼、键盘操作和跳跃中断后的落地。用于观察状态的入口只存在于本地测试拦截的响应中。
 
 ## 用模板做自己的主页
 
