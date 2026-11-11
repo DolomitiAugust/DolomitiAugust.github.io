@@ -27,7 +27,7 @@ The key page brings three Gofish characters into a shared space. They welcome vi
 
 The personal site uses native HTML, CSS and JavaScript, supports 14 languages and includes light and dark themes. Node.js 20 or later is required; the site build has no third-party dependencies.
 
-From the repository root, build and preview with Node.js 20 or later. There are no third-party dependencies to install.
+From the repository root, build and preview with the commands below.
 
 ```sh
 npm run build
