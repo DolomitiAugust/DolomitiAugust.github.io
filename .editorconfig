@@ -17,3 +17,7 @@ end_of_line = crlf
 # Markdown uses trailing double spaces for hard line breaks.
 [*.md]
 trim_trailing_whitespace = false
+
+# Data files use two-space indentation.
+[*.{json,yml,yaml}]
+indent_size = 2
