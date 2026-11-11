@@ -36,6 +36,8 @@ npm run preview
 
 Open the [local preview](http://127.0.0.1:4173). After editing a source file, rebuild and refresh the page. Press `Ctrl+C` to stop the preview server.
 
+If port 4173 is already in use, choose another port with `PORT=4174 npm run preview` (macOS/Linux) or `$env:PORT = '4174'; npm run preview` (PowerShell), then open `http://127.0.0.1:4174`.
+
 With Chrome and Python Playwright available, keep the preview running and use `python tests/gate_browser.py --evidence ../gate-review` to exercise the gate locally. The success test substitutes a temporary digest in one isolated browser response.
 
 Use `python tests/mascot_dynamics.py --url http://127.0.0.1:4173 --evidence ../mascot-soak` for a real three-minute motion observation. Add `--interactions` to check input priorities, privacy, keyboard activation and interrupted landings. The observation hook exists only in intercepted local test responses.

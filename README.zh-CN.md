@@ -36,6 +36,8 @@ npm run preview
 
 打开 [本地预览](http://127.0.0.1:4173)。修改源文件后重新构建，刷新浏览器即可看到变化。按 `Ctrl+C` 结束预览。
 
+如果 4173 端口已被占用，可用 `PORT=4174 npm run preview`（macOS/Linux）或 `$env:PORT = '4174'; npm run preview`（PowerShell）改用其他端口，再打开 `http://127.0.0.1:4174`。
+
 本机装有 Chrome 和 Python Playwright 时，可保持预览服务运行，再执行 `python tests/gate_browser.py --evidence ../gate-review` 验收登录流程。成功用例只在隔离浏览器收到的本地 HTML 中替换测试摘要。
 
 执行 `python tests/mascot_dynamics.py --url http://127.0.0.1:4173 --evidence ../mascot-soak` 可进行三分钟实时动效观察。加上 `--interactions` 可检查输入优先级、闭眼、键盘操作和跳跃中断后的落地。用于观察状态的入口只存在于本地测试拦截的响应中。
