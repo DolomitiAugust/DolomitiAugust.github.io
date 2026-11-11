@@ -1,5 +1,5 @@
 import { createServer } from 'node:http';
-import { readFile, stat } from 'node:fs/promises';
+import { open, readFile, stat } from 'node:fs/promises';
 import { resolve, dirname, extname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../dist');
@@ -11,6 +11,14 @@ const server = createServer(async (req, res) => {
     let filename = resolve(root, '.' + pathname);
     if (filename !== root && !filename.startsWith(root + sep)) { res.writeHead(403); res.end('Forbidden'); return; }
     if ((await stat(filename)).isDirectory()) filename = resolve(filename, 'index.html');
+    if (req.method === 'HEAD') {
+      const file = await open(filename, 'r');
+      try { if (!(await file.stat()).isFile()) throw new Error('Not a file'); }
+      finally { await file.close(); }
+      res.writeHead(200, {'Content-Type':types[extname(filename)] || 'application/octet-stream','Cache-Control':'no-cache'});
+      res.end();
+      return;
+    }
     const body = await readFile(filename);
     res.writeHead(200, {'Content-Type':types[extname(filename)] || 'application/octet-stream','Cache-Control':'no-cache'});
     res.end(body);
